@@ -6,11 +6,11 @@ book:
   title: "Hitchhiker's Guide to Schizophrenia"
   author: "Anselm Jeong"
   language: ko
-  repo-url: https://github.com/AnselmJeong/Psychopharmacology
+  repo-url: https://github.com/AnselmJeong/Hitchhiker_Schizophrenia
   repo-actions: [edit]
   sharing: [twitter]
   cover-image: /images/cover.jpg
-  date: "2022. 5. 5."
+  date: "2024. 5. 6."
   chapters:
     - index.qmd
     - part: "조현병의 역사"
@@ -181,10 +181,17 @@ format:
     
   pdf:
     # latex-auto-install: true
-    include-in-header: 
-      text: |
-        \usepackage[cjk]{kotex}
-  
+    css: styles.css
+    footnotes-hover: false
+    anchor-sections: true
+    toc: true
+    toc-depth: 3
+    number-depth: 4
+    reference-location: margin
+    number-sections: true
+    crossref:
+      chapters: true
+    link-citations: false
     
 
 editor: visual
