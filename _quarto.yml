@@ -1,0 +1,191 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Hitchhiker's Guide to Schizophrenia"
+  author: "Anselm Jeong"
+  language: ko
+  repo-url: https://github.com/AnselmJeong/Psychopharmacology
+  repo-actions: [edit]
+  sharing: [twitter]
+  cover-image: /images/cover.jpg
+  date: "2022. 5. 5."
+  chapters:
+    - index.qmd
+    - part: "조현병의 역사"
+      chapters: 
+        - 01-01-01.qmd
+        - 01-01-02.qmd
+        - 01-02.qmd
+        - 01-03.qmd
+        - 01-04.qmd
+        - 01-05.qmd
+        - 01-06.qmd
+    - part: "조현병의 생물학적 이해"
+      chapters: 
+        - 02-01.qmd
+        - 02-02.qmd
+        - 02-03.qmd
+        - 02-04.qmd
+        - 02-05.qmd
+        - 02-06.qmd
+        - 02-07.qmd
+        - 02-08.qmd
+        - 02-09.qmd
+        - 02-10.qmd
+        - 02-11.qmd
+        - 02-12.qmd
+    - part: "조현병 치료의 기본 개념"
+      chapters:
+        - 03-01.qmd
+        - 03-02.qmd
+        - 03-03.qmd
+        - 03-04.qmd
+    - part: "조현병 약물치료의 역사와 현재"
+      chapters:
+        - 04-01.qmd
+        - 04-02.qmd
+        - 04-03.qmd
+        - 04-04.qmd
+        - 04-05.qmd
+    - part: "전임상 모델"
+      chapters:
+        - 05-01.qmd
+        - 05-02.qmd
+        - 05-03.qmd
+    - part: "항정신병 약물의 작용 기전"
+      chapters:
+        - 06-01.qmd
+        - 06-02.qmd
+        - 06-03.qmd
+        - 06-04.qmd
+        - 06-05.qmd
+        - 06-06.qmd
+        - 06-07.qmd
+        - 06-08.qmd
+        - 06-09.qmd
+        - 06-10.qmd
+        - 06-11.qmd
+        - 06-12.qmd
+    - part: "다양한 항정신병 약물"
+      chapters:
+        - 08-01.qmd
+        - 08-02.qmd
+        - 08-03.qmd   
+    - part: "조현병 약물 치료의 일반적 원칙"
+      chapters:
+        - 08-04.qmd
+        - 08-05.qmd
+        - 08-06.qmd
+        - 08-07.qmd
+    - part: "부작용과 그 대처법"
+      chapters:
+        - 09-01.qmd
+        - 09-02.qmd
+        - 09-03.qmd
+        - 09-04.qmd
+        - 09-05.qmd
+        - 09-06.qmd
+        - 09-07.qmd
+        - 09-08.qmd
+        - 09-09.qmd
+    - part: "실제 임상에서 부딪히는 문제들"
+      chapters:
+        - 10-01.qmd
+        - 10-02.qmd
+        - 10-03.qmd
+    - part: "치료저항성 환자의 치료"
+      chapters:
+        - 11-01.qmd
+        - 11-02.qmd
+        - 11-03.qmd
+        - 11-04.qmd
+        - 11-05.qmd
+        
+    - part: "초발 정신병, 소아/청소년 환자"
+      chapters:
+        - 12-01.qmd
+        - 12-02.qmd
+        - 12-03.qmd
+        - 12-04.qmd
+    - part: "음성/인지/긴장 증상의 치료"
+      chapters:
+        - 13-01.qmd
+        - 13-02.qmd
+        - 13-03.qmd
+        - 13-04.qmd
+        - 13-05.qmd
+    - part: "긴장증의 치료"
+      chapters:
+        - 14-01.qmd
+    - part: "중/노년기 이후의 조현병 치료"
+      chapters:
+        - 15-01.qmd
+        - 15-02.qmd
+        - 15-03.qmd
+    - part: "특수한 임상 상황에서의 치료"
+      chapters: 
+        - 16-01.qmd
+        - 16-02.qmd
+        - 16-03.qmd
+    - part: "우울과 강박 증상의 치료"
+      chapters: 
+        - 17-01.qmd
+        - 17-02.qmd
+        - 17-03.qmd
+        - 17-04.qmd
+        
+    - part: "폭력과 자살의 문제"
+      chapters: 
+        - 18-01.qmd
+        - 18-02.qmd
+        - 18-03.qmd
+        - 19-01.qmd
+        - 19-02.qmd
+    
+
+        
+      
+csl: plos.csl
+crossref: 
+  fig-prefix: 그림
+  tbl-prefix: 표
+  fig-title: 그림
+  tbl-title: 표
+  sec-prefix: 섹션
+
+
+
+format:
+  html:
+    theme: 
+      light: yeti
+      dark: darkly
+    mainfont: "Noto Serif KR"
+    css: styles.css
+    footnotes-hover: false
+    anchor-sections: true
+    toc: true
+    toc-depth: 3
+    number-depth: 4
+    reference-location: margin
+    number-sections: true
+    crossref:
+      chapters: true
+    
+  docx:
+    theme: yeti
+    toc: false
+    number-sections: true
+    
+  pdf:
+    # latex-auto-install: true
+    include-in-header: 
+      text: |
+        \usepackage[cjk]{kotex}
+  
+    
+
+editor: visual
+
